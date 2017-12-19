@@ -1,9 +1,11 @@
 const express = require('express')
 const router = express.Router()
 let service = require('./service')
+/*
 const bodyParser = require('body-parser')
 router.use(bodyParser.urlencoded({ extended: false }))
 router.use(bodyParser.json())
+*/
 router.route('/hero')
   .get((req, res) => {
     let obj = service.getList()
