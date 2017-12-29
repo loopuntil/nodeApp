@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-//service實務上要改寫連真正的db，這邊是範例所以用mock的
+//service實務上要改寫連真正的db，這邊是範例所以是mock
 let service = require('./service')
 //如果app.js沒有設定要加下面這三行接收JSON格式參數，有就不用加了
 /*

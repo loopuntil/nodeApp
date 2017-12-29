@@ -35,7 +35,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 //設定可靜態存取的目錄，api可忽略
 app.use(express.static(path.join(__dirname, 'public')));
-//路由，跟目錄
+//路由，根目錄
 app.use('/', index);
 //api路由
 app.use('/api', api);
